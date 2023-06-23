@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Example Of Breadcrumbs</title>
+    <link rel="shortcut icon" href="#" />
+    <style>
+      .breadcrumb > li {
+        display: inline;
+      }
+
+      .breadcrumb li + li::before {
+        padding: 10px;
+        content: ">";
+      }
+
+      .breadcrumb a {
+        text-decoration: none;
+      }
+
+      .breadcrumb a:hover {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="breadcrumb">
+      <li>
+        <a href="shopping">Shopping</a>
+      </li>
+      <li>
+        <a href="fashion">Fashion</a>
+      </li>
+      <li>
+        <a href="shoes">Shoes</a>
+      </li>
+      <li>
+        <a href="flats">Flats</a>
+      </li>
+      <li>
+        <a href="brown">Brown</a>
+      </li>
+    </ul>
+  </body>
+</html>

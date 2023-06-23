@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Code Challenge:CSS DESIGN-Position</title>
+    <link rel="shortcut icon" href="#" />
+    <style>
+      .circle {
+        border-radius: 50%;
+        width: 200px;
+        height: 200px;
+        opacity: 0.5;
+      }
+
+      #red {
+        background-color: rgb(255, 0, 0);
+        position: relative;
+        /* bottom: 50px; */
+        bottom: 100px;
+      }
+
+      #blue {
+        background-color: rgb(0, 0, 255);
+        position: relative;
+        /* top: 50px; */
+        top: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="circle" id="blue"></div>
+    <div class="circle" id="red"></div>
+  </body>
+</html>

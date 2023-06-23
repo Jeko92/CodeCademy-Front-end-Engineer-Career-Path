@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brown Shoes</title>
+    <link rel="shortcut icon" href="#" />
+    <style>
+      .breadcrumb > li {
+        display: inline;
+      }
+
+      .breadcrumb li + li::before {
+        padding: 10px;
+        content: ">";
+      }
+
+      .breadcrumb a {
+        text-decoration: none;
+      }
+
+      .breadcrumb a:hover {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Brown Shoes</h1>
+    <ul class="breadcrumb">
+      <li>
+        <a href="./shoes.html">Shoes</a>
+      </li>
+      <li>
+        <a href="./flats.html">Flats</a>
+      </li>
+      <li>
+        <a href="#">Brown</a>
+      </li>
+    </ul>
+  </body>
+</html>
