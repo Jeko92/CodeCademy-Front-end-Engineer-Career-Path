@@ -214,6 +214,8 @@ figcaption span {
 }
 
 /* Image-Gallery */
+
+/* @media only screen and (max-width: 2900px) { */
 .gallery {
   /* background-color: #fdfbf7; */
   background-color: rgba(255, 85, 170, 0.5);
@@ -226,6 +228,7 @@ figcaption span {
   grid-gap: 1.5rem;
   padding: 1.5rem;
 }
+/* } */
 .gallery__img {
   width: 100%;
   height: 100%;
@@ -295,4 +298,88 @@ footer {
 
 footer p {
   font-size: 1.4rem;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 996px) {
+  #about p {
+    font-size: 1.1rem;
+    padding: 1rem;
+  }
+
+  #membership-options {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #membership-header {
+    grid-area: 1/1 / span 2 / span 1;
+  }
+
+  .membership-cards {
+    grid-area: 2/1/-1/-1;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .gallery {
+    grid-gap: 0;
+  }
+
+  figure {
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .membership-cards {
+    width: 100%;
+    grid-area: 2/1/-1/-1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 0.5rem;
+  }
+
+  .membership-card {
+    max-height: 100%;
+  }
+
+  .membership-card figure {
+    position: relative;
+    margin: 0;
+  }
+
+  .membership-card figcaption {
+    padding: 1rem 1.5rem;
+    font-size: 1.4rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  #about {
+    height: 50rem;
+  }
+  #about p {
+    font-size: 1.4rem;
+    padding: 0.5rem;
+  }
+
+  #membership-options {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 3fr;
+  }
+
+  .membership-cards {
+    grid-area: 2/1/-1/-1;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  .gallery {
+    grid-gap: 0;
+  }
+
+  figure {
+    margin: 0;
+  }
 }
