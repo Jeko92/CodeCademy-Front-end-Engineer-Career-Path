@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website Design System</title>
+    <!-- Google fonts start -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Nunito:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,400;0,600;0,700;1,400;1,700&family=Roboto+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Google fonts end -->
+    <!-- Highlight JS Library -->
+    <!-- <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css"
+    /> -->
+    <!-- Highlight JS Library End-->
+
+    <link rel="shortcut icon" href="#" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a class="main-nav--link" href="#colors">Colors</a></li>
+          <li><a class="main-nav--link" href="#fonts">Fonts</a></li>
+          <li><a class="main-nav--link" href="#text">Text</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>My Website Style Guide</h1>
+      <section id="colors">
+        <h2>Colors</h2>
+        <div class="color-items">
+          <a class="color-item color-item--red">
+            Color Red
+            <span>#F38181</span>
+          </a>
+          <a class="color-item color-item--yellow">
+            Color Yellow
+            <span>#FCE38A</span>
+          </a>
+          <a class="color-item color-item--green">
+            Color Green
+            <span>#EAFFD0</span>
+          </a>
+          <a class="color-item color-item--teal">
+            Color Teal
+            <span>#95E1D3</span>
+          </a>
+        </div>
+      </section>
+      <section id="fonts">
+        <h2>Fonts</h2>
+        <div class="font-items">
+          <div class="font-item font-item--nunito">
+            <h3>Nunito</h3>
+            <p>The quick brown fox jumps over the lazy dog.</p>
+            <p><strong>The quick brown fox jumps over the lazy dog.</strong></p>
+            <p><em>The quick brown fox jumps over the lazy dog.</em></p>
+          </div>
+          <div class="font-item font-item--poppins">
+            <h3>Poppins</h3>
+            <p>The quick brown fox jumps over the lazy dog.</p>
+            <p><strong>The quick brown fox jumps over the lazy dog.</strong></p>
+            <p><em>The quick brown fox jumps over the lazy dog.</em></p>
+          </div>
+          <div class="font-item font-item--roboto">
+            <h3>Roboto Mono</h3>
+            <p>The quick brown fox jumps over the lazy dog.</p>
+            <p><strong>The quick brown fox jumps over the lazy dog.</strong></p>
+            <p><em>The quick brown fox jumps over the lazy dog.</em></p>
+          </div>
+        </div>
+      </section>
+      <section id="text">
+        <h2 id="text-heading">Text Styles</h2>
+        <div class="text-items">
+          <div class="text-item">
+            <h1 class="style-h1">H1: Main page heading</h1>
+
+            <h4>Applied CSS Rule Set:</h4>
+            <pre>
+            <code class="css">
+                h1 {
+                    padding: 2rem 0;
+                    font-size: 3.5rem;
+                    text-align: center;
+                    color: #00adb5;
+                }
+            </code>
+            </pre>
+          </div>
+          <div class="text-item">
+            <h2 class="style-h2">H2: Subheading</h2>
+
+            <h4>Applied CSS Rule Set:</h4>
+            <pre>
+                <code>
+                    h2 {
+                        font-family:Poppins, sans-serif;
+                        font-size: 18px;
+                        font-weight:500;
+                    }
+                </code>
+            </pre>
+          </div>
+          <div class="text-item">
+            <p class="style-p">P: Paragraph text</p>
+
+            <h4>Applied CSS Rule Set:</h4>
+            <pre>
+                <code>
+                    p {
+                        font-family:Poppins, sans-serif;
+                        font-size: 14px; /* regular */
+                        font-weight:400;
+                    }
+                </code>
+            </pre>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <small
+        >Created by <strong>Jeko_92</strong> as a practice project for
+        <strong>CodeCademy's</strong> Front-End Engineer Career Path.</small
+      >
+      <small
+        >This page server learning purposes and all rights are reserved.
+        &copy;</small
+      >
+    </footer>
+    <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+    <script src="/path/to/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script> -->
+  </body>
+</html>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="33px" height="22px" viewBox="0 0 33 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.1 (47250) - http://www.bohemiancoding.com/sketch -->
+    <title>menu</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Mobile" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-266.000000, -53.000000)" stroke-linecap="square">
+        <g id="Group-2" transform="translate(258.000000, 39.000000)" stroke="#FFFFFF">
+            <g id="menu" transform="translate(9.000000, 14.000000)">
+                <g id="Group-3">
+                    <path d="M0.25,11 L30.75,11" id="Line-Copy" stroke-width="2"></path>
+                    <path d="M0.25,21 L30.75,21" id="Line-Copy-2" stroke-width="2"></path>
+                    <path d="M0.25,1 L30.75,1" id="Line" stroke-width="2"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

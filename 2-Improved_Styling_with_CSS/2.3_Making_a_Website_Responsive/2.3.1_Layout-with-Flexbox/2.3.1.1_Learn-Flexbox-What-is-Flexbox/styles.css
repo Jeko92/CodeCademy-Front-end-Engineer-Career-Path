@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Libre Baskerville", sans-serif;
+}
+
+img {
+  margin: 10px auto;
+  height: auto;
+  width: auto;
+}
+
+ul {
+  text-align: right;
+}
+
+h1 {
+  font-size: 20px;
+}
+
+/* Sizing */
+.container {
+  margin: 0 auto;
+}
+
+.spacer {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.main {
+  background-color: #ffc200;
+}
+
+/* Header Section */
+.header {
+  padding: 30px 0px 40px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.header li {
+  list-style: none;
+  display: inline-block;
+}
+
+.header li a {
+  color: #333;
+  margin: 0;
+  border: 0px;
+}
+
+/* Jumbotron Section */
+.jumbotron {
+  background-color: #fff;
+  max-width: 1200px;
+  margin-left: 50px;
+}
+
+.jumbotron h2 {
+  font-size: 50px;
+  margin-bottom: 70px;
+}
+
+.jumbotron h2 span {
+  color: #ffc200;
+}
+
+.jumbotron p {
+  text-shadow: 0 0;
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 0;
+}
+
+/* Banner Section */
+.banner {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.banner-heading {
+  font-size: 1.5em;
+  margin: 1.3rem 0;
+}
+
+.banner-text {
+  margin: 1rem 0;
+}
+
+/* Expertise Section */
+.cards {
+  background-color: #ffc200;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.col {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#expertise {
+  padding: 20px;
+  background-color: #ffc200;
+  margin: 0;
+  text-align: center;
+  font-size: 1.5em;
+  color: #000;
+}
+
+/* Footer Section */
+.footer {
+  padding: 60px 50px;
+  background-color: #000;
+  color: #fff;
+}

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Table Reference & CSS cheatsheet</title>
+    <link rel="shortcut icon" href="#" />
+    <!-- Google Fonts Start -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Roboto+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts End -->
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a class="nav-item html-ref--link" href="#html-ref">html</a></li>
+          <li>
+            <a class="nav-item css-ref--link" href="#css-cheatsheet">css</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="html-ref">
+        <h1>HTML Table Reference</h1>
+        <div class="table-tags">
+          <h2>Table Tags</h2>
+          <table>
+            <thead>
+              <tr class="main-row">
+                <th>Tag</th>
+                <th>Name</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <code> &lt;table&gt; </code>
+                </td>
+                <td>Table</td>
+                <td>The wrapper element for all HTML tables.</td>
+              </tr>
+              <tr class="darker-row">
+                <td>
+                  <code> &lt;thead&gt; </code>
+                </td>
+                <td>Table Head</td>
+                <td>The set of rows defining the column headers in a table.</td>
+              </tr>
+              <tr>
+                <td>
+                  <code> &lt;tbody&gt; </code>
+                </td>
+                <td>Table Body</td>
+                <td>The set of rows containing actual table data.</td>
+              </tr>
+              <tr class="darker-row">
+                <td>
+                  <code> &lt;tr&gt; </code>
+                </td>
+                <td>Table Row</td>
+                <td>The table row container.</td>
+              </tr>
+              <tr>
+                <td>
+                  <code> &lt;td&gt; </code>
+                </td>
+                <td>Table Data</td>
+                <td>The table row container.</td>
+              </tr>
+              <tr class="darker-row">
+                <td>
+                  <code> &lt;tfoot&gt; </code>
+                </td>
+                <td>Table Foot</td>
+                <td>The set of rows defining the footer in a table.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="table-attributes">
+          <h2>Table Attributes</h2>
+          <table>
+            <thead>
+              <tr class="main-row">
+                <th>Attribute</th>
+                <th>Name</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <code> &lt;colspan&gt; </code>
+                </td>
+                <td>Column Span</td>
+                <td>Defines how many columns a td element should span.</td>
+              </tr>
+              <tr class="darker-row">
+                <td>
+                  <code> &lt;rowspan&gt; </code>
+                </td>
+                <td>Row Span</td>
+                <td>Defines how many rows a td element should span.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <section>
+        <h1>CSS Table Reference</h1>
+        <div class="css-cheatsheet">
+          <h2>CSS selectors</h2>
+          <table>
+            <thead>
+              <tr class="main-row">
+                <th>Declarations</th>
+                <th>Example</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Font Size</td>
+                <td><code> font-size: 30px; </code></td>
+                <td>
+                  The font-size CSS property is used to set text sizes. Font
+                  size values can be many different units or types such as
+                  pixels.
+                </td>
+              </tr>
+              <tr class="darker-row">
+                <td>Background Color</td>
+                <td><code> background-color: blue;</code></td>
+                <td>Defines how many rows a td element should span.</td>
+              </tr>
+              <tr>
+                <td>Text Align</td>
+                <td><code> text-align: right; </code></td>
+                <td>
+                  The text-align CSS property can be used to set the text
+                  alignment of inline contents. This property can be set to
+                  these values: left, right, or center.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <small
+        >Created by <span class="author">Jeko_92</span> for
+        <a
+          href="https://www.codecademy.com/learn"
+          class="footer-link project-name"
+          >CodeCademy</a
+        >
+        challenge Project:
+        <span class="project-name"
+          ><a
+            class="footer-link"
+            href="https://content.codecademy.com/PRO/independent-practice-projects/html-css-cheat-sheet/example/index.html?_gl=1*crgnwa*_ga*OTkwNzYxODE0OC4xNjg1MjUzNDgx*_ga_3LRZM6TM9L*MTY4NjYzOTc4My4yMy4xLjE2ODY2NDQwNDMuMC4wLjA."
+            >Build Your Own Cheat Sheet.
+          </a></span
+        >
+      </small>
+      <small>All rights reserved &copy;</small>
+    </footer>
+  </body>
+</html>

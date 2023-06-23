@@ -1,0 +1,39 @@
+body {
+  /* font-family: Arial, Helvetica, sans-serif; */
+  font-family: "Josefin Sans", sans-serif;
+  /* color: tomato; */
+  color: #fff;
+  background-color: lightcyan;
+  /* background-image: url("https://newevolutiondesigns.com/images/freebies/nature-hd-background-2.jpeg"); */
+  background-image: url("https://newevolutiondesigns.com/images/freebies/4k-space-wallpaper-1.jpg");
+}
+
+h1 {
+  font-size: 40px;
+}
+
+p {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+a {
+  /* color: tomato; */
+  color: #fff;
+}
+
+nav {
+  /* background-color: black;
+  opacity: 0.5; */
+  background: rgba(0, 0, 0, 0.5);
+}
+
+main {
+  /* text-align: center; */
+  text-align: right;
+}
+
+img {
+  height: 50px;
+  opacity: 0.5;
+}

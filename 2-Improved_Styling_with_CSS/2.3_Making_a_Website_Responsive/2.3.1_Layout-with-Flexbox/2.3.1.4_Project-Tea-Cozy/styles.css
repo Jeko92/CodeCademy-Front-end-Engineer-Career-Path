@@ -1,0 +1,247 @@
+/* Site Stylesheet
+  1. Global Styles
+  2. Typography Styles
+  3. Structure Styles
+  4. Module Styles
+  5. Component Styles
+  6. Page Styles
+======================================== */
+
+/* 1. Global Styles
+======================================== */
+html {
+  /* max-width: 100%; */
+  overflow-x: hidden;
+  background-color: #000;
+  color: #fff;
+  opacity: 0.9;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 22px;
+  color: seashell;
+  background-color: rgba(0, 0, 0, 0.9);
+  text-align: center;
+}
+
+main {
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 2. Typography Styles
+======================================== */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  /* font-family: "Roboto", Helvetica, sans-serif; */
+  font-weight: 700;
+}
+
+h2 {
+  font-size: calc(64px / 1.5);
+  margin: 1.3rem auto;
+}
+
+h4 {
+  font-size: calc(30px / 1.5);
+  margin: 1rem auto;
+}
+
+h3 {
+  font-size: calc(45px / 1.5);
+  margin: 1.5rem auto;
+}
+p {
+  margin: 1.2rem auto;
+}
+
+a {
+  color: seashell;
+  font-size: 24px;
+  line-height: 24px;
+  text-decoration: underline;
+}
+
+img {
+  max-width: 1200px;
+}
+
+/* 3. Structure Styles
+======================================== */
+.container-lg {
+  width: 1200px;
+}
+
+.container-sm {
+  width: 1000px;
+}
+
+.backdrop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: brightness(0.6);
+  z-index: 999;
+}
+
+/* 4. Module Styles
+======================================== */
+
+/* Site Navigation Styles */
+header {
+  height: 69px;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  /* padding: 0 10px; */
+  /* background-color: rgba(0, 0, 0, 0.9);
+  z-index: 777; */
+  border-bottom: 1px solid seashell;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-box {
+  height: 50px;
+  margin-left: 10px;
+}
+
+.logo-box a,
+.logo-box a img {
+  display: block;
+  height: 100%;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
+}
+
+.main-nav li {
+  display: inline-block;
+  margin-right: 25px;
+}
+
+/* 5. Component Styles
+======================================== */
+
+/* 6. Page Styles
+======================================== */
+
+/* Jumbotron Section Styles*/
+.jumbotron {
+  height: 700px;
+  /* width: 100%; */
+  margin-bottom: 4rem;
+  background: url("./assets/img/img-mission-background.jpeg");
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}
+
+.jumbotron-text-box {
+  background-color: #000;
+  width: 100%;
+}
+
+/* Featured Section Styles */
+.tea-sortiment {
+  width: 100%;
+  margin: 3rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.tea-cards {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* flex-wrap: wrap; */
+}
+
+.row1,
+.row2 {
+  display: flex;
+  width: 100%;
+}
+
+.row1 {
+  justify-content: space-between;
+  /* gap: 2rem; */
+}
+
+.row2 {
+  justify-content: center;
+  /* gap: 2rem; */
+}
+
+/* .tea-card  {
+  margin: 0 2rem 0 -1rem;
+} */
+
+.tea-img img {
+  width: 300px;
+  height: 200px;
+  display: block;
+}
+
+/* Locations Section Styles*/
+#locations {
+  height: 500px;
+  /* width: 100%; */
+  margin-bottom: 4rem;
+  background: url("./assets/img/img-locations-background.jpeg");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+}
+
+.locations-cards {
+  display: flex;
+  justify-content: center;
+}
+
+.location-card {
+  background-color: #000;
+  width: 300px;
+}
+
+.middle-card {
+  margin: 0 40px;
+}
+
+/* Contact Styles*/
+#contact {
+  height: 200px;
+  margin-bottom: 3rem;
+}
+
+#contact h2 {
+  margin-top: -3rem;
+}
+
+/* Footer Styles*/
+.footer {
+  text-align: left;
+  margin-left: 20px;
+}
