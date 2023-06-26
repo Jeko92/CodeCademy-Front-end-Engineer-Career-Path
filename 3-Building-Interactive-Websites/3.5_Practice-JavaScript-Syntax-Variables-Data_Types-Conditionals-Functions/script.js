@@ -103,7 +103,84 @@ const sillySentence = (str1, str2, str3) =>
   `I am so ${str1} because I ${str2} coding! Time to write some more awesome ${str3}!`;
 
 // 12/15 howOld
-const 
+const howOld = (age, year) => {
+  const now = new Date();
+  const currentYear = now.getFullYear();
+  console.log(currentYear);
+  const yearDiff = year - currentYear;
+  const newAge = age + yearDiff;
+  let answer = "";
+  if (year > currentYear) {
+    answer = `You will be ${newAge} in the year ${year}`;
+  } else if (year < currentYear && year <= currentYear - age) {
+    answer = `The year ${year} was ${-newAge} years before you were born`;
+  } else {
+    answer = `You were ${newAge} in the year ${year}`;
+  }
+  return answer;
+};
+
+// 13/15 Fix the broken code(round2)!
+const whatRelation = (percentSharedDNA) => {
+  if (percentSharedDNA === 100) {
+    return "You are likely identical twins.";
+  }
+  if (percentSharedDNA > 34) {
+    return "You are likely parent and child or full siblings.";
+  }
+  if (percentSharedDNA > 13) {
+    return "You are likely grandparent and grandchild, aunt/uncle and niece/nephew, or half siblings.";
+  }
+  if (percentSharedDNA > 5) {
+    return "You are likely 1st cousins.";
+  }
+  if (percentSharedDNA > 2) {
+    return "You are likely 2nd cousins.";
+  }
+  if (percentSharedDNA > 0) {
+    return "You are likely 3rd cousins";
+  } else {
+    return "You are likely not related.";
+  }
+};
+
+// 14/15 tipCalculator
+const tipCalculator = (quality, totalCost) => {
+  return quality === "bad"
+    ? totalCost * 0.05
+    : quality === "ok"
+    ? totalCost * 0.15
+    : quality === "good"
+    ? totalCost * 0.2
+    : quality === "excellent"
+    ? totalCost * 0.3
+    : totalCost * 0.18;
+};
+
+// 15/15 toEmoticon
+const toEmoticon = (str) => {
+  let answer = "";
+  switch (str) {
+    case "shrug":
+      answer = '|_{"}_|';
+      break;
+    case "smiley face":
+      answer = ":)";
+      break;
+    case "frowny face":
+      answer = ":(";
+      break;
+    case "winky face":
+      answer = ";)";
+      break;
+    case "heart":
+      answer = "<3";
+      break;
+    default:
+      answer = "|_(* ~ *)_|";
+  }
+  return answer;
+};
 
 /*Write code to test your function. Even if we provide code to test your function, you should add
 further tests to make sure your function works correctly in all the specified situations*/
@@ -143,3 +220,46 @@ console.log(
     "functions"
   )}`
 );
+
+console.log(`howOld function logs: ${howOld(31, 2025)}`);
+console.log(`howOld function logs: ${howOld(31, 1997)}`);
+console.log(`howOld function logs: ${howOld(31, 1990)}`);
+
+console.log(`whatRelation function logs: ${whatRelation(34)}`);
+// Should print 'You are likely grandparent and grandchild, aunt/uncle and niece/nephew, or half siblings.'
+console.log(`whatRelation function logs: ${whatRelation(3)}`);
+// Should print 'You are likely 2nd cousins.'
+
+console.log(`tipCalculator function logs: ${tipCalculator("good", 100)}`);
+console.log(`toEmoticon function logs: ${toEmoticon("whatever")}`);
+// Should print  '|_(* ~ *)_|'
+
+// JavaScript Practice: Data Types, Conditional, Functions
+const colorMessage = (favoriteColor, shirtColor) => {
+  return favoriteColor === shirtColor
+    ? "The shirt is your favorite color!"
+    : "That is a nice color";
+};
+
+console.log(colorMessage("green", "green"));
+console.log(colorMessage("green", "red"));
+
+const isEven = (num) => (num % 2 === 0 ? true : false);
+console.log(isEven(2));
+console.log(isEven(135));
+
+const numberDigits = (x) => {
+  let answer = "";
+  if (x >= 10 && x <= 99) {
+    answer = `Two digits: ${x}`;
+  } else if (x >= 0 && x <= 9) {
+    answer = `One digit: ${x}`;
+  } else {
+    answer = `The number is: ${x}`;
+  }
+  return answer;
+};
+
+console.log(numberDigits(3));
+console.log(numberDigits(13));
+console.log(numberDigits(404));
