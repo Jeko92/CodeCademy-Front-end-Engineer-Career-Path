@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Regular Expressions</title>
+    <!-- Google fonts start -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito"
+      rel="stylesheet"
+    />
+    <!-- Google fonts end -->
+    <link rel="shortcut icon" href="#" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <!-- <h1>Enter A Pattern And See What Matches:</h1>
+    <input
+      type="text"
+      name="pattern"
+      id="searchPattern"
+      placeholder="Enter a pattern here..."
+    /> -->
+    <div class="app">
+      <h1 id="title">Enter A Pattern And See What Matches:</h1>
+      <input
+        type="text"
+        id="expression"
+        autocomplete="off"
+        placeholder="Enter a pattern here..."
+        onsubmit="reactToSubnmit"
+      /><br />
+      <div>
+        <ul>
+          <li>
+            <span class="icon">🚫</span>
+            <span class="notMatched">hello</span>
+            <span class="matched"></span>
+            <span class="notMatched"></span>
+          </li>
+          <li>
+            <span class="icon">🚫</span>
+            <span class="notMatched">hello world</span>
+            <span class="matched"></span>
+            <span class="notMatched"></span>
+          </li>
+          <li>
+            <span class="icon">🚫</span>
+            <span class="notMatched">Hello, world!</span>
+            <span class="matched"></span>
+            <span class="notMatched"></span>
+          </li>
+          <li>
+            <span class="icon">🚫</span>
+            <span class="notMatched">Hello, Friend!</span>
+            <span class="matched"></span>
+            <span class="notMatched"></span>
+          </li>
+          <li>
+            <span class="icon">🚫</span>
+            <span class="notMatched">coolEmail@blorglax.com</span>
+            <span class="matched"></span>
+            <span class="notMatched"></span>
+          </li>
+          <li>
+            <span class="icon">🚫</span>
+            <span class="notMatched">P@55w0rd!</span>
+            <span class="matched"></span>
+            <span class="notMatched"></span>
+          </li>
+          <li>
+            <span class="icon">🚫</span>
+            <span class="notMatched">(617) 222-1247</span>
+            <span class="matched"></span>
+            <span class="notMatched"></span>
+          </li>
+          <li>
+            <span class="icon">🚫</span>
+            <span class="notMatched">+1-341-554-3910</span>
+            <span class="matched"></span>
+            <span class="notMatched"></span>
+          </li>
+          <li>
+            <span class="icon">🚫</span>
+            <span class="notMatched">
+              1630 Revello Drive, Sunnydale, California
+            </span>
+            <span class="matched"></span>
+            <span class="notMatched"></span>
+          </li>
+          <li>
+            <span class="icon">🚫</span>
+            <span class="notMatched">
+              3170 West 53 Road, #35, Annapolis, Maryland
+            </span>
+            <span class="matched"></span>
+            <span class="notMatched"></span>
+          </li>
+        </ul>
+      </div>
+      <br />
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
