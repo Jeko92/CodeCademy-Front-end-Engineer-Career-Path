@@ -1,0 +1,56 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", Helvetica, Arial, sans-serif;
+  /* background-color: #ececec; */
+  background-color: #efd9ca;
+  color: #141c3a;
+  font-size: xx-large;
+}
+
+.app {
+  width: 60%;
+  height: auto;
+  margin: 5% auto 0 auto;
+  /* background: tomato; */
+}
+
+h1 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+input[type="text"] {
+  width: 50%;
+  display: block;
+  font-size: 2rem;
+  height: 3rem;
+  padding: 1rem 2rem;
+  margin: 0 auto;
+}
+
+input::placeholder {
+  font-size: 2rem;
+  margin: 0;
+  vertical-align: middle;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  text-align: left;
+}
+
+.matched {
+  color: #20a530;
+  font-weight: 700;
+  text-shadow: 0.01em 0.01em #0e6a18;
+}
+
+.notMatched {
+  color: #141c3a;
+  font-weight: 600;
+}
