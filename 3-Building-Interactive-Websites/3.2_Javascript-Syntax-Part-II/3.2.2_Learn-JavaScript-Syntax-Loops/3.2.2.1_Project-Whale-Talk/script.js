@@ -1,35 +1,20 @@
-let secretMessage = [
-  "Learning",
-  "is",
-  "not",
-  "about",
-  "what",
-  "you",
-  "get",
-  "easily",
-  "the",
-  "first",
-  "time,",
-  "it",
-  "is",
-  "about",
-  "what",
-  "you",
-  "can",
-  "figure",
-  "out.",
-  "-2015,",
-  "Chris",
-  "Pine,",
-  "Learn",
-  "JavaScript",
-];
+let input = "Fortune favors the brave";
+const vowels = ["a", "e", "i", "o", "u"];
+const resultArray = [];
 
-secretMessage.pop();
-console.log(secretMessage.pop());
-secretMessage.push("to", "program");
-secretMessage[7] = "right";
-secretMessage.shift();
-secretMessage.unshift("Programming");
-secretMessage.slice(7, 11);
-console.log(secretMessage.join(" "));
+for (let i = 0; i < input.length; i++) {
+  // console.log(`i is: ${i}`);
+  if (input[i] === "e" || input[i] === "u") {
+    resultArray.push(input[i]);
+  }
+  for (let j = 0; j < vowels.length; j++) {
+    // console.log(`j is: ${j}`);
+    if (input[i] === vowels[j]) {
+      // console.log(`There\'s a matched letter: ${input[i]}`);
+      resultArray.push(vowels[j]);
+    }
+  }
+}
+
+const resultString = resultArray.join("").toUpperCase();
+console.log(resultString);
