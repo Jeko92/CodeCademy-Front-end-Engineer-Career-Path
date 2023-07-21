@@ -43,7 +43,7 @@ const balloonAttack = (p1, p2) => {
 class ShiftCipher {
   constructor(shiftCount) {
     this._shiftCount = shiftCount;
-    this._alphabet = {
+    /* this._alphabet = {
       97: "a",
       98: "b",
       99: "c",
@@ -70,20 +70,44 @@ class ShiftCipher {
       120: "x",
       121: "y",
       122: "z",
-    };
+    }; */
+    this._alphabet = ShiftCipher.Range(
+      "a".charCodeAt(0),
+      "z".charCodeAt(0),
+      1
+    ).map((x) => String.fromCharCode(x));
   }
+
+  static Range = (start, stop, step) =>
+    Array.from(
+      { length: (stop - start) / step + 1 },
+      (_, i) => start + i * step
+    );
 
   encrypt(str) {
     console.log(str.toLowerCase().split(""));
+    console.log(this._alphabet);
     return str
       .toLowerCase()
       .split("")
       .map((char, i, arr) => {
         if (char.charCodeAt(0) >= 97 && char.charCodeAt(0) <= 122) {
+          // return char.charCodeAt(0);
           if (char.charCodeAt(0) + this._shiftCount > 122) {
-            return this._alphabet[char.charCodeAt(0) - 26 + this._shiftCount];
+            // return this._alphabet[char.charCodeAt(0) - 26 + this._shiftCount];#
+            // console.log(`this._alphabettttt:${this._alphabet}`);
+            return this._alphabet.find(
+              (el) =>
+                el ===
+                String.fromCharCode(char.charCodeAt(0) - 26 + this._shiftCount)
+            );
           } else {
-            return this._alphabet[char.charCodeAt(0) + this._shiftCount];
+            // return this._alphabet[char.charCodeAt(0) + this._shiftCount];
+            return this._alphabet.find(
+              (el) =>
+                el ===
+                String.fromCharCode(char.charCodeAt(0) + this._shiftCount)
+            );
           }
         } else {
           return char;
@@ -100,10 +124,21 @@ class ShiftCipher {
       .split("")
       .map((char, i, arr) => {
         if (char.charCodeAt(0) >= 97 && char.charCodeAt(0) <= 122) {
+          // char.charCodeAt(0);
           if (char.charCodeAt(0) - this._shiftCount < 97) {
-            return this._alphabet[char.charCodeAt(0) - this._shiftCount + 26];
+            // return this._alphabet[char.charCodeAt(0) - this._shiftCount + 26];
+            return this._alphabet.find(
+              (el) =>
+                el ===
+                String.fromCharCode(char.charCodeAt(0) + 26 - this._shiftCount)
+            );
           } else {
-            return this._alphabet[char.charCodeAt(0) - this._shiftCount];
+            // return this._alphabet[char.charCodeAt(0) - this._shiftCount];
+            return this._alphabet.find(
+              (el) =>
+                el ===
+                String.fromCharCode(char.charCodeAt(0) - this._shiftCount)
+            );
           }
         } else {
           return char;
