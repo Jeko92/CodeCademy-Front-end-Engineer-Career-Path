@@ -7,7 +7,7 @@ class Field {
       'Find Your Hat Game: \r\nYour goal is to navigate through \x1b[32m Field\x1b[37m so that you avoid \x1b[31m"O"\x1b[37m-s  and find a lost hat-\x1b[42m\x1b[37m"^""\x1b[0m"\r\n(For navigation Please choose one of the following options: r-RIGHT,l-LEFT,u-UP,d-DOWN))\n There are 3 different fields to play: "Enchanted Glade"(Small), "Dragon\'s Embrace"(Medium), "Realm of Titans"(Big) \nGame has 3 difficulty Levels: beginner, intermediate or expert\n';
   }
 
-  static generateField(height, width, difficultyLvl) {
+  /*  static generateField(height, width, difficultyLvl) {
     const hat = "^";
     const hole = "O";
     const fieldCharacter = "░";
@@ -48,8 +48,83 @@ class Field {
       field[y][x] = hole;
     }
     return field;
-  }
+  } */
+  static generateField(height, width, difficultyLvl) {
+    const hat = "^";
+    const hole = "O";
+    const fieldCharacter = "░";
+    const pathCharacter = "*";
+    let percentage =
+      difficultyLvl === "beginner"
+        ? 20
+        : difficultyLvl === "intermediate"
+        ? 35
+        : 45;
 
+    // Calculate the total number of holes
+    const totalHoles = Math.floor((width * height * percentage) / 100);
+
+    // Initialize the 2D array with fieldCharacters
+    const field = Array.from({ length: height }, () =>
+      Array.from({ length: width }, () => fieldCharacter)
+    );
+
+    // Generate random position for the hat and place it in the field
+    const { x: hatX, y: hatY } = Field.getRandomUniquePosition(height, width);
+    field[hatY][hatX] = hat;
+
+    // Place the pathCharacter at the start (top-left corner)
+    field[0][0] = pathCharacter;
+
+    // Generate random positions for holes and place them in the field
+    for (let i = 0; i < totalHoles; i++) {
+      let x, y;
+      do {
+        ({ x, y } = Field.getRandomUniquePosition(height, width));
+      } while (
+        field[y][x] === hole ||
+        (x === 0 && y === 0) ||
+        (x === hatX && y === hatY)
+      ); // Ensure the pathCharacter and hat are not overwritten
+
+      field[y][x] = hole;
+    }
+
+    // Perform a Depth-First Search (DFS) to ensure there is a path from pathCharacter to hat
+    const visited = Array.from({ length: height }, () =>
+      Array.from({ length: width }, () => false)
+    );
+
+    function dfs(x, y) {
+      if (
+        x < 0 ||
+        x >= width ||
+        y < 0 ||
+        y >= height ||
+        visited[y][x] ||
+        field[y][x] === hole
+      ) {
+        return;
+      }
+
+      visited[y][x] = true;
+
+      dfs(x + 1, y);
+      dfs(x - 1, y);
+      dfs(x, y + 1);
+      dfs(x, y - 1);
+    }
+
+    dfs(0, 0);
+
+    // Check if the hat is reachable from the pathCharacter
+    if (!visited[hatY][hatX]) {
+      // If the hat is not reachable, regenerate the field
+      return Field.generateField(height, width, difficultyLvl);
+    }
+
+    return field;
+  }
   static getRandomUniquePosition(height, width) {
     const x = Math.floor(Math.random() * width);
     const y = Math.floor(Math.random() * height);
@@ -184,7 +259,7 @@ class Field {
   }
 }
 
-const myField = new Field();
+// const myField = new Field();
 const myField1 = new Field();
 // myField.init(10, 10);
 // myField.play();
