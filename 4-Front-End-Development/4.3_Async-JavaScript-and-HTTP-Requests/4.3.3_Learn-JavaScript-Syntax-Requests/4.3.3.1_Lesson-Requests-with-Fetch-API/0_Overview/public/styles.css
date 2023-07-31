@@ -1,0 +1,29 @@
+@font-face {
+  font-family: "Monaco";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Monaco"), url("Monaco.woff") format("woff");
+}
+
+h1 {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 40px;
+}
+
+#buttonContainer {
+  padding: 15% 35% 25% 35%;
+}
+
+#generate {
+  font-size: 15px;
+  height: 3em;
+  width: max-content;
+  font-family: monaco;
+}
+
+pre {
+  border-style: solid;
+  height: 100%;
+  overflow: auto;
+  overflow-wrap: break-word;
+}
