@@ -1,0 +1,7 @@
+.DS_Store
+
+# IntelliJ project files
+.idea
+
+# npm dependencies
+/node_modules/
