@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Byte Size</title>
+    <!-- Google fonts start -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro"
+      rel="stylesheet"
+    />
+    <!-- Google fonts end -->
+    <link rel="stylesheet" href="./public/styles.css" />
+  </head>
+  <body>
+    <header>
+      <img src="./assets/SVG/bytesize_logo.svg" class="logo" />
+    </header>
+    <main id="main">
+      <div class="container">
+        <h1>Enter a URL</h1>
+
+        <form id="form" autocomplete="off">
+          <input type="text" id="input" value="" />
+          <button id="shorten">Shorten</button>
+        </form>
+
+        <div id="responseField"></div>
+      </div>
+    </main>
+    <!-- jQuery start -->
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <!-- jQuery end -->
+    <script src="config.json" type="application/json"></script>
+    <script src="./public/main.js"></script>
+    <script src="./public/helperFunctions.js"></script>
+  </body>
+</html>
