@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: tomato;
+  color: #0a0408;
+}
+
+#appTitle {
+  text-align: center;
+  /* margin: 5rem auto; */
+  margin: 0 auto;
+  display: block;
+  font-family: "Saatliches", sans-serif;
+  font-size: 80px;
+}
+
+#genreForm,
+#playBtn {
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+  font-family: "Fredoka One", sans-serif;
+}
+
+#movieInfo {
+  width: 65%;
+  margin: 2rem auto;
+}
+
+#movieInfo:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#moviePoster,
+#movieText {
+  width: 50%;
+  float: left;
+}
+
+img#moviePoster {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+
+#movieText {
+  font-family: "Questrial";
+  color: #fefbea;
+  line-height: 1.25;
+}
+
+#movieTitle,
+#movieOverview {
+  padding: 2rem;
+}
+
+#playBtn {
+  margin-top: 1.3rem;
+  font-size: 2.1rem;
+  padding: 0.5rem 0.625rem;
+  border-radius: 0.625rem;
+  border-style: none;
+  background-color: #b97828;
+  color: #fdc238;
+  cursor: pointer;
+}
+
+label {
+  display: block;
+  font-size: 2.25rem;
+  margin-bottom: 0.5rem;
+}
+
+select {
+  width: 200px;
+  height: auto;
+}
+
+#likeOrDislikeBtns {
+  text-align: center;
+  margin: 0 auto;
+}
+
+#likeBtn,
+#dislikeBtn {
+  padding: 15px 25px;
+  font-size: 25px;
+  border-radius: 12px;
+  border-style: none;
+  cursor: pointer;
+}
+
+#likeBtn {
+  background-color: #249e57;
+  color: darkgreen;
+}
+
+#dislikeBtn {
+  background-color: #c74a4a;
+  color: #910000;
+}
