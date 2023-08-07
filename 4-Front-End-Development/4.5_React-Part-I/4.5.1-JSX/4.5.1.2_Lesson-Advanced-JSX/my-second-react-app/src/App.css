@@ -1,0 +1,168 @@
+html,
+body {
+  margin: 0;
+  height: 100%;
+}
+
+body {
+  background-color: #ffffff;
+  font-family: Helvetica, Arial, sans-serif;
+  text-align: center;
+}
+
+.big {
+  font-size: 100px;
+}
+
+#app {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  padding-top: 10px;
+}
+
+#app div {
+  width: 100%;
+}
+
+#app div div {
+  position: absolute;
+  height: 100%;
+}
+
+#app div div div {
+  position: relative;
+  height: auto;
+}
+
+h1,
+h2 {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+label {
+  display: block;
+  margin: 20px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+nav a {
+  margin: 12px;
+  text-transform: uppercase;
+  font-size: 10px;
+}
+
+button {
+  -webkit-transition-duration: 0.1s; /* Safari */
+  transition-duration: 0.1s;
+  background-color: #f4595b;
+  border-radius: 8px;
+  border-bottom: 4px solid #c24648;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-family: "Oxygen", sans-serif;
+  letter-spacing: 2px;
+}
+
+button:hover {
+  background-color: #ff7375;
+  border: none;
+  border-radius: 8px;
+  border-bottom: 4px solid #c24648;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-family: "Oxygen", sans-serif;
+  letter-spacing: 2px;
+}
+
+button:active {
+  background-color: #c24648;
+  border: none;
+  border-radius: 8px;
+  border-bottom: 4px solid #c24648;
+  color: #ccc;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-family: "Oxygen", sans-serif;
+  letter-spacing: 2px;
+}
+
+/* 1/16 class vs className */
+.self-closing-tags {
+  background-color: #f4595b;
+  padding: 2rem;
+}
+
+/* 2/16 Self-Closing Tags */
+.john-smith {
+  border-radius: 50%;
+  height: 13rem;
+  width: 13rem;
+  display: block;
+  margin: 0.5rem auto;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+/* 8/16 Event Listeners in JSX */
+.make-puppy {
+  height: 10rem;
+  display: block;
+  margin: 1rem auto;
+  display: block;
+}
+
+.arrow-flow {
+  display: inline-block; /* To ensure the animation works as expected */
+  animation: arrow 2s infinite ease-in-out;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+@keyframes arrow {
+  0%,
+  100% {
+    transform: translateY(0); /* Arrow is at its starting position */
+  }
+  50% {
+    transform: translateY(1rem); /* Arrow is at its lowest point */
+  }
+}
+
+/* 9/16 JSX Conditionals: If Statements That Don't Work */
+.codesnippet {
+  width: 85%; /* Set the container to take up half the width */
+  margin: 2rem auto; /* Center the container horizontally */
+  overflow: auto;
+}
+
+/* 15/16 React.createElement */
+#greatestDivEver {
+  height: 20rem;
+  width: 67%;
+  margin: 1rem auto;
+  background-color: goldenrod;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+}
