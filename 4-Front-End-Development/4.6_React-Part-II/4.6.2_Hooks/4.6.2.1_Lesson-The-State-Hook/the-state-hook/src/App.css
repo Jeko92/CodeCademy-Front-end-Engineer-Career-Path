@@ -1,0 +1,260 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #ffffff;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+* {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+#app {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+h1 {
+  margin: 0;
+  padding: 8px 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+input,
+textarea {
+  padding: 5px;
+  margin: 0 7%;
+}
+
+form button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 5px;
+}
+
+ul {
+  list-style: none;
+  text-align: center;
+}
+
+ul {
+  padding: 0;
+  margin: 0 7%;
+}
+
+li {
+  background-color: Cornsilk;
+  border: 1px solid BurlyWood;
+  border-radius: 5px 2px;
+  margin: 8px 0;
+}
+
+li div {
+  position: relative;
+  margin: 0 7%;
+}
+
+li div button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: transparent;
+  border: 0;
+  padding: 10px;
+  font-weight: bolder;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+li div button:hover,
+li div button:focus {
+  box-shadow: 0 0 1px black;
+}
+
+li h2 {
+  background-color: NavajoWhite;
+  margin: 0;
+  padding: 4px;
+}
+
+li p {
+  margin: 8px;
+}
+
+div {
+  padding: 20px 0 0;
+  height: 100%;
+}
+
+#root {
+  padding: 0;
+}
+
+.picker-btn {
+  font-size: 1.2rem;
+  margin: 0 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 3px 3px goldenrod;
+}
+
+.picker-btn2 {
+  margin: 0.3rem;
+}
+
+nav {
+  padding: 2rem;
+  background-color: slategrey;
+  color: #ffffff;
+}
+
+nav h1 {
+  font-size: 2rem;
+}
+
+span {
+  font-size: 1.4rem;
+}
+
+nav p {
+  font-size: 1.2rem;
+}
+
+nav button {
+  color: #ffffff;
+  background-color: coral;
+}
+
+nav button:disabled {
+  background-color: #eee;
+  color: black;
+}
+
+#correct-answer {
+  display: block;
+  margin-bottom: 0.5rem;
+  visibility: hidden;
+}
+
+.grocery-item {
+  border: none;
+  margin: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  background-color: darkslategray;
+  color: #eee;
+}
+
+.grocery-cart {
+  background-color: turquoise;
+  padding: 2rem 0;
+}
+
+.produce,
+.pantry-items {
+  border-radius: 10px;
+  padding: 1rem;
+  /* margin-bottom: 1rem; */
+}
+
+.produce {
+  background-color: deepskyblue;
+}
+
+.pantry-items {
+  background-color: darkseagreen;
+}
+
+.grocery-cart ul {
+  background-color: tomato;
+  /* border: 1px solid BurlyWood; */
+  border-radius: 5px 2px;
+  /* margin: 8px 0; */
+  padding: 1rem 0;
+  color: #333;
+  margin: 1rem 0;
+}
+
+.grocery-cart li {
+  background-color: coral;
+  border: none;
+  border-radius: 0;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.edit-profile-form {
+  background-color: mediumslateblue;
+  padding: 2rem 0 4rem 0;
+  display: flex;
+}
+
+.edit-form-submit-btn {
+  display: block;
+  position: relative;
+  width: 70vw;
+  margin: 0 auto;
+  background-color: tomato;
+  border: none;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  color: #eee;
+  box-shadow: 4px 4px rebeccapurple;
+}
+
+.form-data {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70vw;
+  margin: 0 auto;
+}
+
+.form-data label {
+  flex: 3;
+  text-align: left;
+}
+
+.form-data input {
+  flex: 7;
+  justify-self: flex-start;
+  border: none;
+  border-radius: 10px;
+  padding: 0.7rem;
+  /* margin-left: auto; */
+  margin: 0;
+}
+
+.separate-hoooks {
+  background-color: darkorange;
+  padding: 2rem;
+}
+
+.separate-hoooks li {
+  background-color: #eee;
+  border: none;
+  border-radius: 0;
+  padding: 0.4rem;
+  /* display: flex;
+  justify-content: space-between; */
+  text-align: left;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.separate-hoooks li span {
+  font-size: 1rem;
+  font-weight: normal;
+}
