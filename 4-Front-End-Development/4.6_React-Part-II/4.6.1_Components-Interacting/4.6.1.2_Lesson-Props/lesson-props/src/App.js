@@ -9,6 +9,7 @@ import Greeting from "./components/Greeting";
 import Talker from "./components/Talker";
 import List from "./components/List";
 import ButtonDefault from "./components/ButtonDefault";
+import GroceryItem from "./components/GroceryItem";
 
 function App() {
   return (
@@ -39,6 +40,23 @@ function App() {
       </div>
       <div>
         <ButtonDefault text="Text passed from parent" />
+      </div>
+      <div className="groceryList" style={{ margin: "3.5rem auto" }}>
+        <h1>Grocery List</h1>
+        <ul>
+          <li>
+            <GroceryItem item="Eggs" />
+          </li>
+          <li>
+            <GroceryItem item="Banana" />
+          </li>
+          <li>
+            <GroceryItem item="Strawberry" />
+          </li>
+          <li>
+            <GroceryItem item="Bread" />
+          </li>
+        </ul>
       </div>
     </>
   );
