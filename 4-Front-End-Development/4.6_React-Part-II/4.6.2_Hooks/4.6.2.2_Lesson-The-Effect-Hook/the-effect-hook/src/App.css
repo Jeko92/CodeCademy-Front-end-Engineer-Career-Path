@@ -95,3 +95,46 @@ table {
 th {
   text-decoration: underline;
 }
+
+.content {
+  display: flex;
+  justify-content: space-evenly;
+  overflow: hidden;
+}
+
+section {
+  overflow: scroll;
+  max-height: 80vh;
+  padding: 0 40px 0;
+  margin: 20px;
+}
+
+.social-network-list {
+  width: 300px;
+  background-color: darkslategray;
+  color: #ffffff;
+  font-size: 1.3rem;
+  list-style: none;
+  position: relative;
+  padding: 1.5rem 3rem;
+  margin: 0 auto;
+}
+
+.social-network-list li {
+  background-color: inherit;
+  color: inherit;
+  padding-left: 1.5em;
+  border: none;
+}
+
+.social-network-list li:before {
+  position: absolute;
+  content: "•";
+  transform: scale(3);
+  color: green;
+  left: 2rem;
+}
+
+.social-network-list li.offline:before {
+  color: red;
+}
