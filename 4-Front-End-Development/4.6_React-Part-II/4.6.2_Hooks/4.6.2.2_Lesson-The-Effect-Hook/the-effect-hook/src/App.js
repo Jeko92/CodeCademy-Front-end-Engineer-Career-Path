@@ -4,6 +4,8 @@ import Counter from "./componnets/Counter";
 import Counter1 from "./componnets/CounterWithCleanup";
 import Timer from "./componnets/Timer";
 import Forecast from "./componnets/Forecast";
+import Shop from "./componnets/Shop";
+import SocialNetwork from "./componnets/SocialNetwork";
 
 function App() {
   return (
@@ -16,6 +18,8 @@ function App() {
       <Counter1 />
       <Timer />
       <Forecast />
+      <Shop />
+      <SocialNetwork />
     </div>
   );
 }
