@@ -1,0 +1,9 @@
+.div {
+  background: pink url("../assets/gif/welcome-to-my-homepage.gif");
+  height: 200px;
+  width: 700px;
+  margin: 0 auto;
+  display: block;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
