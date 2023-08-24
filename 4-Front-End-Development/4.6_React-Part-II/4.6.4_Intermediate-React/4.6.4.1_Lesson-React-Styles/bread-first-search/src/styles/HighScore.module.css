@@ -1,0 +1,32 @@
+.highscores {
+  width: 50vw;
+  background-color: #ccd5ae;
+  color: #354f52;
+  margin: 0 auto;
+  border: none;
+  padding: 2rem 3rem;
+  border-radius: 10px;
+}
+
+.list {
+  list-style: none;
+  font-size: 1.3rem;
+  color: #354f52;
+}
+
+.list li {
+  background-color: aliceblue;
+  padding: 0.5rem;
+}
+
+.list li:first-child {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  background-color: darkslategray;
+  color: #fff;
+}
+
+.list li:last-child {
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
