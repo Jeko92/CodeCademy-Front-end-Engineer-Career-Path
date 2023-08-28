@@ -1,0 +1,27 @@
+h2 {
+  margin-top: 0;
+  color: #2f4858;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+p {
+  font-size: 14px;
+  margin-bottom: 20px;
+  color: #2f4858;
+}
+label {
+  font-size: 14px;
+  font-weight: bold;
+  color: #2f4858;
+}
+input {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 30px;
+  margin-left: 10px;
+  font-size: 14px;
+  color: #2f4858;
+  background-color: #f5f6f8;
+  width: 220px;
+  margin: 0.5rem;
+}
