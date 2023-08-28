@@ -1,0 +1,63 @@
+.mainform {
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: bold;
+  width: 60vw;
+  margin: 1rem auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.inputcontainer {
+  border-radius: 5px;
+  /* border: 1px solid #bc5a45; */
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.inputcontainer label {
+  flex: 0 0 auto;
+  width: 30%;
+  text-align: start;
+}
+
+.inputcontainer input {
+  flex: 0 0 auto;
+  width: 65%;
+}
+
+.submitbutton {
+  background-color: coral;
+  border: 1px solid coral;
+  border-radius: 0.5rem;
+  display: block;
+  width: 100%;
+  color: white;
+  font-weight: bold;
+  padding: 1em 2rem;
+}
+
+.label {
+  color: #36486b;
+}
+
+@media only screen and (max-width: 1222px) {
+  /* Styles for small screens */
+  .label {
+    font-size: 14px;
+  }
+  .formbutton {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 1075px) {
+  /* Styles for small screens */
+  .label {
+    font-size: 10px;
+  }
+  .formbutton {
+    font-size: 10px;
+  }
+}
