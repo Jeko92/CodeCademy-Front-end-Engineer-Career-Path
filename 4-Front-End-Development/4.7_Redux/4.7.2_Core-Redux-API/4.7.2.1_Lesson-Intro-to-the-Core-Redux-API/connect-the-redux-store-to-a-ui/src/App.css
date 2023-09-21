@@ -1,0 +1,35 @@
+#root {
+  text-align: center;
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.button-group {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  height: 2.5rem;
+  width: 7rem;
+  border-radius: 0.75rem;
+  border: none;
+  background-color: goldenrod;
+  font-size: 2rem;
+}
+
+button#incrementer:active {
+  transform: translateY(0.25rem);
+  box-shadow: 5px 5px 5px yellowgreen;
+}
+
+button#decrementer:active {
+  transform: translateY(0.25rem);
+  box-shadow: 5px 5px 5px coral;
+}
+
+p {
+  margin-bottom: 5px;
+}
