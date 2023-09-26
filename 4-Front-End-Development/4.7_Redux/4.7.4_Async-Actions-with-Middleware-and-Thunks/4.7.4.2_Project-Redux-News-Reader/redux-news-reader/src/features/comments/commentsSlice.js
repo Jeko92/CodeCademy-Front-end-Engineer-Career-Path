@@ -30,11 +30,12 @@ export const commentsSlice = createSlice({
   name: "comments",
   initialState: {
     // Add initial state properties here.
-    byArticleId: {},
-    isLoadingComments: false,
-    failedToLoadComments: false,
-    createCommentIsPending: false,
-    failedToCreateComment: false,
+    byArticleId: {
+      isLoadingComments: false,
+      failedToLoadCommets: false,
+      createCommentIsPending: false,
+      failedToCreateComment: false,
+    },
   },
   // Add extraReducers here.
   extraReducers: (builder) => {
@@ -62,6 +63,9 @@ export const commentsSlice = createSlice({
       .addCase(postCommentForArticleId.fulfilled, (state, action) => {
         state.createCommentIsPending = false;
         state.failedToCreateComment = false;
+        // console.log(action.payload.articleId);
+        // console.log(state);
+
         state.byArticleId[action.payload.articleId].push(action.payload);
       })
       .addCase(postCommentForArticleId.rejected, (state) => {
