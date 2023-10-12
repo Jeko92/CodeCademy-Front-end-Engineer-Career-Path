@@ -92,3 +92,8 @@ export const SecondaryButton = styled(Button)`
   background-color: ${(props) => props.theme.colors.secondary};
   color: ${(props) => props.theme.colors.primary};
 `;
+
+const header = styled.div`
+  font-size: 70px;
+  color: indigo;
+`;
