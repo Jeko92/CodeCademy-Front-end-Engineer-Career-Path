@@ -1,0 +1,54 @@
+<!-- <!DOCTYPE html> -->
+<html lang="en">
+  <head>
+    <!-- <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+    <title>Bubble Sort Algorithm - Visualization</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div id="search-container">
+      <div class="label">
+        <div class="description">Bubble Sort</div>
+      </div>
+      <div id="information">
+        <div class="stats">
+          <div>Comparisons: <span id="comparisons">0</span></div>
+          <div>Swaps: <span id="swaps">0</span></div>
+        </div>
+        <button id="play" class="nav-button">
+          <span>Restart</span>
+        </button>
+      </div>
+      <div id="bubble-sort" class="sort"></div>
+      <div class="current-action">
+        <span id="action">Comparing</span> index
+        <span id="first-swap">0</span> (<span id="second-swap-value"></span>)
+        and index <span id="second-swap">1</span> (<span
+          id="first-swap-value"
+        ></span
+        >).
+      </div>
+    </div>
+
+    <div id="input-section">
+      <div id="" class="section-heading">Generate A New Input Order</div>
+      <div id="input-orders">
+        <button id="random" class="nav-button">
+          <span>Random</span>
+        </button>
+        <button id="reverse-sorted" class="nav-button">
+          <span>Unsorted</span>
+        </button>
+        <button id="sorted" class="nav-button">
+          <span>Sorted</span>
+        </button>
+      </div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
