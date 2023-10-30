@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Binary Search Visualization</title>
+    <link rel="shortcut icon" href="#" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="images">
+        <img
+          class="interactive-img"
+          src="assets/images/frame_00_delay-2s.png"
+        />
+        <img
+          class="interactive-img"
+          src="assets/images/frame_02_delay-2s.png"
+        />
+        <img
+          class="interactive-img"
+          src="assets/images/frame_03_delay-2s.png"
+        />
+        <img
+          class="interactive-img"
+          src="assets/images/frame_01_delay-2s.png"
+        />
+        <img
+          class="interactive-img"
+          src="assets/images/frame_04_delay-2s.png"
+        />
+        <img
+          class="interactive-img"
+          src="assets/images/frame_05_delay-2s.png"
+        />
+        <img
+          class="interactive-img"
+          src="assets/images/frame_06_delay-2s.png"
+        />
+        <img
+          class="interactive-img"
+          src="assets/images/frame_07_delay-2s.png"
+        />
+        <img
+          class="interactive-img"
+          src="assets/images/frame_08_delay-2s.png"
+        />
+        <img
+          class="interactive-img"
+          src="assets/images/frame_09_delay-2s.png"
+        />
+        <img
+          class="interactive-img"
+          src="assets/images/frame_10_delay-2s.png"
+        />
+      </div>
+      <div id="navigation">
+        <button id="previous" class="nav-button">
+          <img id="previous-img" src="assets/svg/previous.svg" />
+          <span>Back</span>
+        </button>
+        <button id="toggle" class="nav-button">
+          <img
+            id="play-img"
+            src="assets/svg/play.svg"
+            style="display: hidden"
+          />
+          <img id="pause-img" src="assets/svg/pause.svg" />
+        </button>
+        <button id="next" class="nav-button">
+          <span>Next</span>
+          <img id="next-img" src="assets/svg/next.svg" />
+        </button>
+      </div>
+      <div></div>
+    </div>
+    <div class="progress-container">
+      <div class="ordinality">
+        <span id="current-frame">1</span>/<span id="total-frames">X</span>
+      </div>
+      <div class="progress">
+        <div id="bar"></div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
